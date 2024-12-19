@@ -1,5 +1,6 @@
 import React from "react";
-import Tilt from "react-tilt";
+// Updated import for Tilt
+import { Tilt } from "react-tilt"; 
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -26,9 +27,6 @@ const ServiceCard = ({ index, title, icon }) => (
           alt='web-development'
           className='w-16 h-16 object-contain'
         />
-
-        
-
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -36,7 +34,7 @@ const ServiceCard = ({ index, title, icon }) => (
     </motion.div>
   </Tilt>
 );
-//about section
+
 const About = () => {
   return (
     <>
